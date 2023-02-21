@@ -45,7 +45,7 @@ CREATE TABLE `comptes` (
 --
 
 INSERT INTO `comptes` (`id`, `nom`, `prenom`, `email`, `mot_de_passe`, `tel`, `etat`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(6, 'edward', 'said', 'test1@gmail.com', '123456', '0675406152', '1', '2023-02-17 17:44:05', '2023-02-17 18:58:04', NULL),
+(6, 'edward', 'said', 'test@gmail.com', '123456', '0675406152', '1', '2023-02-17 17:44:05', '2023-02-17 18:58:04', NULL),
 (7, 'sami', 'mohamed', 'test2@gmail.com', '123456', '0675406152', '1', '2023-02-17 17:45:23', '2023-02-17 19:18:06', '2023-02-17 20:17:35'),
 (8, 'youssif', 'mohamed', 'test3@gmail.com', 'ffffffffff', '0675406152', '1', '2023-02-17 19:33:18', NULL, NULL),
 (9, 'mostapha', 'said', 'test4@gmail.com', '0666666666', '0666666666', '', '2023-02-17 20:16:00', '2023-02-17 20:17:25', NULL),
