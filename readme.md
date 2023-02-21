@@ -6,8 +6,8 @@ To get started with this application, you need to have PHP and a web server (suc
 
 bash
 ``` 
-git clone https://github.com/raxidbou4nja/mymvc.git
-cd mymvc
+git clone https://github.com/raxidbou4nja/smvc.git
+cd smvc
 ```
 
 Import the file mvc.sql from /db_file folder to your database.
