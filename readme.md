@@ -1,71 +1,42 @@
-# Simple Todo list By Jqeury
-This is a simple Model-View-Controller (MVC) PHP application that provides a basic framework for building web applications. The purpose of this project is to provide an easy-to-understand example of how MVC works in PHP and to serve as a starting point for building more complex applications.
+#Todo App with jQuery and PHP
+This is a simple Todo app that uses jQuery and PHP to create, read, update, and delete tasks from a database. The app allows users to:
 
+* Add a new task
+* View existing tasks
+* Update the status of a task
+* Delete a task
 ## Getting Started
-To get started with this application, you need to have PHP and a web server (such as Apache) installed on your machine. You can then clone the repository and run the application locally.
+To use this app, you'll need to have a web server running PHP and a MySQL database. Here's how to get started:
 
-bash
-``` 
-git clone https://github.com/raxidbou4nja/todo.git
-cd smvc
-```
+Clone or download the repository to your local machine.
 
-Import the file mvc.sql from /db_file folder to your database.
-Connect your project to database by editing app/config/config.php
+Create a new database in MySQL, and import the todo.sql file in the database directory to create the necessary table.
+
+Update the database configuration in the config.php file with your MySQL database credentials:
 
 ``` 
-  // DB Params
-  define('DB_HOST', 'localhost');
-  define('DB_USER', 'root');
-  define('DB_PASS', '');
-  define('DB_NAME', 'todo');
-
-  // App Root
-  define('APPROOT', dirname(dirname(__FILE__)));
-  // URL Root
-  define('URLROOT', 'http://localhost/FOLDER');
-  // Site Name
-  define('SITENAME', 'Project Name');
-  // App Version
-  define('APPVERSION', '1.0.0');
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'your_database_name');
+define('DB_USER', 'your_database_user');
+define('DB_PASSWORD', 'your_database_password');
+Upload the files to your web server.
 ``` 
-## Structure
-``` 
-.htaccess
-readme.md
-├── app
-      ├── config
-      ├── controllers
-      ├── helpers
-      ├── libraries
-      ├── models
-      ├── views
-      .htaccess
-      bootstrap.php
-├── public
-      ├── css
-      ├── img
-      ├── js
-      .htaccess
-      index.php
-``` 
-The application is structured according to the MVC pattern. The index.php file serves as the entry point for the application and is responsible for routing requests to the appropriate controller. The app directory contains the application code, organized into the following directories:
+Open the app in your web browser and start adding tasks!
 
-controllers: Contains the controller classes that handle incoming requests and generate responses.
-models: Contains the model classes that interact with the database or other data sources.
-views: Contains the view files that display the data to the user.
+## Usage
+### Adding a New Task
+To add a new task, enter a task name in the input field at the top of the page and click the "Add Task" button. The task will be added to the database and displayed in the task list.
 
-### Routing
-The index.php file defines the routing logic for the application. It reads the URL of the incoming request and determines which controller and method to call based on the URL. For example, a request to http://localhost/user/edit/1 would be routed to the UserController and the edit method with a parameter of 1.
+### Viewing Tasks
+All existing tasks are displayed in the task list on the main page. Tasks are sorted by status (completed tasks are displayed at the bottom of the list).
 
-### Controllers
-The controller classes in the controllers directory handle incoming requests and generate responses. Each method in a controller corresponds to a particular action that the user can take, such as displaying a page, submitting a form, or processing a search query. The controller methods interact with the model classes to retrieve and manipulate data, and then pass the data to the appropriate view for display.
+### Updating Task Status
+To update the status of a task, click the checkbox next to the task name. The status of the task will be updated in the database and the task will be moved to the appropriate section of the task list.
 
-### Models
-The model classes in the models directory represent the data and business logic of the application. They interact with the database or other data sources to retrieve and store data, and provide methods for manipulating that data.
+### Deleting a Task
+To delete a task, click the "x" icon next to the task name. The task will be removed from the database and from the task list.
 
-### Views
-The view files in the views directory display the data to the user. They are responsible for generating the HTML and CSS that make up the user interface. Views receive data from the controller and use it to dynamically generate the HTML that is sent to the user's browser.
+## License
+This app is licensed under the MIT License. See the LICENSE file for details.
 
-## Conclusion
-This simple MVC PHP application provides a basic framework for building web applications. It demonstrates the separation of concerns between the model, view, and controller, and shows how they work together to create a functional application. By building upon this framework, you can create more complex applications with additional features and functionality.
+
