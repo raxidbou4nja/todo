@@ -19,8 +19,8 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'your_database_name');
 define('DB_USER', 'your_database_user');
 define('DB_PASSWORD', 'your_database_password');
-Upload the files to your web server.
 ``` 
+Upload the files to your web server.
 Open the app in your web browser and start adding tasks!
 
 ## Usage
