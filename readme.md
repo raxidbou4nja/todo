@@ -1,4 +1,4 @@
-# Simple MVC PHP
+# Simple Todo list By Jqeury
 This is a simple Model-View-Controller (MVC) PHP application that provides a basic framework for building web applications. The purpose of this project is to provide an easy-to-understand example of how MVC works in PHP and to serve as a starting point for building more complex applications.
 
 ## Getting Started
@@ -6,7 +6,7 @@ To get started with this application, you need to have PHP and a web server (suc
 
 bash
 ``` 
-git clone https://github.com/raxidbou4nja/smvc.git
+git clone https://github.com/raxidbou4nja/todo.git
 cd smvc
 ```
 
@@ -18,7 +18,7 @@ Connect your project to database by editing app/config/config.php
   define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
-  define('DB_NAME', 'mvc');
+  define('DB_NAME', 'todo');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));

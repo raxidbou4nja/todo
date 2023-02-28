@@ -9,8 +9,5 @@
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/bootstrap.css">
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/fontawesome.min.css">
   <title><?php echo SITENAME; ?></title>
-</head>
-<body>
-  <?php require APPROOT . '/views/inc/navbar.php'; ?>
-  <div class="container">
+
   
