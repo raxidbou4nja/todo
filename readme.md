@@ -1,4 +1,4 @@
-#Todo App with jQuery and PHP
+# Todo App with jQuery and PHP
 This is a simple Todo app that uses jQuery and PHP to create, read, update, and delete tasks from a database. The app allows users to:
 
 * Add a new task
@@ -8,11 +8,11 @@ This is a simple Todo app that uses jQuery and PHP to create, read, update, and 
 ## Getting Started
 To use this app, you'll need to have a web server running PHP and a MySQL database. Here's how to get started:
 
-Clone or download the repository to your local machine.
+* Clone or download the repository to your local machine.
 
-Create a new database in MySQL, and import the todo.sql file in the database directory to create the necessary table.
+* Create a new database in MySQL, and import the todo.sql file in the database directory to create the necessary table.
 
-Update the database configuration in the config.php file with your MySQL database credentials:
+* Update the database configuration in the config.php file with your MySQL database credentials:
 
 ``` 
 define('DB_HOST', 'localhost');
