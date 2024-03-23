@@ -38,5 +38,3 @@ To delete a task, click the "x" icon next to the task name. The task will be rem
 
 ## License
 This app is licensed under the MIT License. See the LICENSE file for details.
-
-
